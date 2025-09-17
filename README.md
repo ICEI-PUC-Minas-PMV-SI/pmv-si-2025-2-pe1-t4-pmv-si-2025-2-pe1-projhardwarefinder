@@ -15,6 +15,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 * Nome completo do aluno 3
 * Rodrigo Luiz de Lima Ferreira
 * Victor Augusto Lobatto da Mata
+* Marco Antônio dos Santos Alves
 
 
 ## Orientador
