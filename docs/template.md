@@ -11,7 +11,9 @@ Detalhe os layouts que serão utilizados. Apresente onde será colocado o logo d
 
 ## Cores
 
-Apresente a paleta de cores que será utilizada. Uma ferramenta interessante para a criação de palestas de cores é o *Adobe Color* ([https://color.adobe.com/pt/create/color-wheel](https://color.adobe.com/pt/create/color-wheel)).
+Cores claras e frias combinam perfeitamente com o setor de tecologia. 
+![paleta_cores](https://github.com/user-attachments/assets/486684d6-a27f-433d-9691-0c5f3574acdf)
+
 
 
 ## Tipografia
