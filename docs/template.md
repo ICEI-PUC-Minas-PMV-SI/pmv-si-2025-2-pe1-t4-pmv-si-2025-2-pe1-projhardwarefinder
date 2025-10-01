@@ -18,7 +18,16 @@ Cores claras e frias combinam perfeitamente com o setor de tecologia.
 
 ## Tipografia
 
-Apresente as fontes que serão utilizadas e sua função no site. As principais funções são: Título de página, Título de Seção, Rótulos de componentes e Corpo de Texto.
+Para conteudo digital, fontes sem serifa são as mais indicadas, por sua melhor leiturabilidade no digital. Para conferir moviemnto, utilizamos duas fontes ascessiviels via Google Fonts: Roboto e Orbitron.
+
+
+https://fonts.google.com/specimen/Roboto
+<img width="1498" height="720" alt="robot_preview" src="https://github.com/user-attachments/assets/d5220200-8f87-4b46-b746-3e0caf0525bf" />
+
+
+https://fonts.google.com/specimen/Orbitron
+<img width="1483" height="344" alt="orbitron_preview" src="https://github.com/user-attachments/assets/8aec86a7-a586-47a1-93d6-2ec86d851f9a" />
+
 
 
 ## Iconografia
