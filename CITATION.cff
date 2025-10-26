@@ -1,0 +1,33 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: Web Application Template
+message: >-
+  Repositório padrão para o Eixo 1 - Projeto 1: Aplicações
+  Web da PUC Minas.
+type: software
+authors:
+  - given-names: Aluno 1
+    family-names: Nome Completo
+    email: aluno@pucminas.br
+    affiliation: PUC Minas
+  - given-names: Hugo
+    name-particle: 'B '
+    family-names: de Paula
+    name-suffix: Prof.
+    email: hugo@pucminas.br
+    affiliation: PUC Minas
+    orcid: 'https://orcid.org/0000-0002-6193-3205'
+repository-code: >-
+  https://github.com/ICEI-PUC-Minas-PMV-SI/WebApplicationProject-Template
+abstract: >-
+  Descrever resumidamente, em um ou dois parágrafos, o
+  projeto que foi desenvolvido.
+keywords:
+  - Desenvolvimento Web
+  - HTML
+  - CSS
+  - JavaScript
+  - Template
+date-released: '2024-06-23'

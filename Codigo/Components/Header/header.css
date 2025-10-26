@@ -1,0 +1,35 @@
+/* Estilo do cabeçalho */
+.site-header {
+    background-color: #e3f2fd;
+    border-bottom: 2px solid #cfe2f3;
+    padding: 10px 0;
+  }
+  
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
+  }
+  
+  .brand {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.4em;
+    color: #003366;
+  }
+  
+  .main-nav a {
+    margin-left: 20px;
+    font-weight: 500;
+  }
+  
+  .main-nav a:hover {
+    color: #001f3f;
+  }

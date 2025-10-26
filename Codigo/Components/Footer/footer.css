@@ -1,0 +1,14 @@
+/* Estilo do rodapé */
+.site-footer {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 40px;
+    border-top: 1px solid #ddd;
+  }
+  
+  .site-footer a {
+    color: #0056b3;
+  }

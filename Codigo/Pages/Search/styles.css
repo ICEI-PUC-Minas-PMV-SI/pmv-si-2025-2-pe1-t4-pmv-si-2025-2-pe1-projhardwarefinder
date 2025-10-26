@@ -1,0 +1,346 @@
+
+:root{
+  --bg: #f5f7fb;
+  --card-bg: #ffffff;
+  --muted: #6b7280;
+  --accent: #2b7cff;
+  --accent-contrast: #ffffff;
+  --border: rgba(15,23,42,0.06);
+  --radius: 10px;
+  --gap: 12px;
+  --header-height: 72px;
+  --sidebar-width: 280px;
+}
+
+
+
+/*Header*/
+header {
+  height: auto;
+  min-height: var(--header-height);
+  display: flex;
+  gap: var(--gap);
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.8), rgba(250,250,252,0.9));
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 40;
+}
+
+.redefinir_escolhas h2 {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+/* Logo*/
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header .logo img.logo {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* redefinir */
+.redefinir_escolhas, .login {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+/*botões*/
+button,
+a[role="button"],
+.input-btn {
+  -webkit-appearance: none;
+  appearance: none;
+  border: 1px solid var(--border);
+  background: var(--accent);
+  color: var(--accent-contrast);
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: transform 140ms ease, box-shadow 140ms ease, background 140ms ease;
+}
+
+button:focus, a[role="button"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(43,124,255,0.12);
+}
+
+button:hover { transform: translateY(-1px); }
+button[disabled], button[aria-disabled="true"] {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* botoes no header */
+.btn_redefinir {
+  background: transparent;
+  color: var(--muted);
+  border: 1px solid transparent;
+  padding: 6px 10px;
+  font-weight: 600;
+}
+.btn_login {
+  background: var(--accent);
+  color: var(--accent-contrast);
+}
+
+/* body */
+main, .page {
+  display: flex;
+  gap: var(--gap);
+  padding: 16px;
+}
+
+.menus_laterais {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  gap: var(--gap);
+  padding: 16px;
+}
+
+.menus_laterais {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 12px;
+  border: 1px solid var(--border);
+  box-shadow: 0 6px 18px rgba(13,20,30,0.03);
+}
+
+.paginas_pecas_diferentes {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.paginas_pecas_diferentes h2 { margin: 0 0 6px 0; font-size: 1rem; }
+
+.paginas_pecas_diferentes button {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: #111827;
+  text-align: left;
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+.paginas_pecas_diferentes button:hover {
+  background: rgba(43,124,255,0.06);
+}
+
+
+/* Filtros */
+.filtros {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.filtros button {
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+.filtros button:hover {
+  background: rgba(43,124,255,0.06);
+  color: #0f172a;
+}
+
+/*peca_atual: main area with images*/
+.peca_atual {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  box-shadow: 0 6px 18px rgba(13,20,30,0.03);
+}
+
+
+.peca_atual img {
+  width: 100%;
+  max-width: 220px;   
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: #ffffff;
+  padding: 10px;
+  box-shadow: 0 6px 18px rgba(13,20,30,0.03);
+  object-fit: contain;
+}
+
+
+/* -------------------------
+   Desktop layout (>= 900px)
+   ------------------------- */
+@media (min-width: 900px) {
+  /* create a two-column layout: sidebar + main */
+  .container {
+    align-items: flex-start;
+  }
+
+  .menus_laterais {
+    width: var(--sidebar-width);
+    flex: 0 0 var(--sidebar-width);
+    height: calc(100vh - var(--header-height) - 40px);
+    overflow: auto;
+    position: sticky;
+    top: calc(var(--header-height) + 12px);
+  }
+
+  .peca_atual {
+    flex: 1 1 auto;
+    min-height: 60vh;
+  }
+
+ 
+
+  .peca_atual img {
+    max-width: 260px;
+  }
+}
+
+
+/* -------------------------
+   Small screens adjustments (mobile)
+   ------------------------- */
+@media (max-width: 899px) {
+  header { flex-direction: column; align-items: stretch; gap: 8px; padding: 12px; }
+  header .logo { justify-content: center; }
+  .redefinir_escolhas { justify-content: center; }
+  .login { justify-content: center; }
+
+  /* stack the menus and main content */
+  .container { flex-direction: column; gap: 12px; padding: 12px; }
+
+  .menus_laterais {
+    width: 100%;
+    position: static;
+    height: auto;
+  }
+
+  .peca_atual {
+    width: 100%;
+    padding: 12px;
+  }
+
+
+  .peca_atual img {
+    max-width: 48%;
+  }
+}
+
+/* Flex layout para .main com sidebar + área principal */
+/* Use as variáveis já definidas no seu styles.css se existir (ex.: --gap, --sidebar-width, --header-height) */
+
+.main {
+  display: flex;
+  gap: var(--gap, 12px);
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0; /* ajuste conforme necessário */
+  box-sizing: border-box;
+  flex-wrap: nowrap; /* no desktop mantenha sem wrap; em mobile mudaremos */
+}
+
+/* Sidebar (menus laterais) */
+.main .menus_laterais {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap, 12px);
+  background: var(--card-bg, #ffffff);
+  border-radius: var(--radius, 10px);
+  padding: 12px;
+  box-shadow: 0 6px 18px rgba(13,20,30,0.03);
+  border: 1px solid var(--border, rgba(15,23,42,0.06));
+
+  /* largura fixa no desktop */
+  flex: 0 0 var(--sidebar-width, 280px);
+  min-width: 200px; /* evita ficar menor que o desejado */
+  max-height: calc(100vh - var(--header-height, 72px) - 40px);
+  overflow: auto; /* permite scroll se o conteúdo exceder a altura */
+}
+
+/* Área principal com imagens */
+.main .peca_atual {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background: var(--card-bg, #ffffff);
+  border: 1px solid var(--border, rgba(15,23,42,0.06));
+  border-radius: var(--radius, 10px);
+  padding: 16px;
+  flex: 1 1 auto; /* ocupa o espaço restante */
+  min-height: 60vh; /* opcional: dá altura para centralizar conteúdo */
+  box-shadow: 0 6px 18px rgba(13,20,30,0.03);
+  box-sizing: border-box;
+}
+
+/* Ajuste para as imagens dentro da área principal */
+.main .peca_atual img {
+  max-width: 220px;
+  width: 100%;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+/* RESPONSIVO: em telas pequenas empilha sidebar + conteúdo */
+@media (max-width: 899px) {
+  .main {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .main .menus_laterais {
+    flex: 0 0 auto;
+    width: 100%;
+    max-height: none;
+    position: static;
+  }
+
+  .main .peca_atual {
+    width: 100%;
+    min-height: auto;
+    padding: 12px;
+    justify-content: center; /* centraliza imagens em mobile */
+  }
+
+  .main .peca_atual img {
+    max-width: 48%;
+  }
+}
+
+/* Pequenos ajustes estéticos opcionais */
+.main .menus_laterais .paginas_pecas_diferentes button,
+.main .menus_laterais .filtros button {
+  width: 100%;
+  text-align: left;
+}
