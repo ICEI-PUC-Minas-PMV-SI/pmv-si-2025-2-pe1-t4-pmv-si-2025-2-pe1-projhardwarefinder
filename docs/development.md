@@ -26,7 +26,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não-funcionais q
 ### Requisitos Funcionais
 
 |ID    | Descrição do Requisito | Responsável | Artefato Criado |
-|------|------------------------|------------|-----------------|
+|------|------------------------|Eric|-----------------|
 |RF-001| Atualizar e aprimorar o protótipo no Lovable, para servir de referência visual e criativa.
 
 Criar a página inicial (Home) do site.
@@ -34,7 +34,10 @@ Criar a página inicial (Home) do site.
 Garantir que as duas páginas sigam o mesmo padrão visual (cores, fontes e layout).
 
 Ajudar na revisão geral e integração entre as páginas.
- | Eric | index.html |
+  index.html |
+
+  |ID    | Descrição do Requisito | Responsável | Artefato Criado |
+|------|------------------------|Marco antônio|-----------------|
 |RF-002| Criar as páginas de Login e Perfil do usuário.
 
 Atualizar a documentação principal do projeto (Etapa 3) com:
@@ -45,8 +48,11 @@ Explicação das funcionalidades e telas.
 
 Relação entre requisitos e implementações.
 
-Novas capturas de tela e fluxos atualizados. | Marco Antônio | Hardwarefinder.html |
+Novas capturas de tela e fluxos atualizados. | Hardwarefinder.html |
 
+
+|ID    | Descrição do Requisito | Responsável | Artefato Criado |
+|------|------------------------|Marcelo|-----------------|
 |RF-003| Criar a página de busca (Search) com filtros e resultados.
 
 Atualizar a documentação, especialmente o User Flow, com base nas novas páginas e na navegação atualizada.
@@ -54,7 +60,7 @@ Atualizar a documentação, especialmente o User Flow, com base nas novas págin
 Garantir que o User Flow mostre claramente o caminho do usuário (Home → Search → Login → Perfil).
 
 Revisar a coerência visual e estrutural entre as páginas.
-| Marcelo |
+
 ## Descrição das estruturas:
 
 ## Notícia
