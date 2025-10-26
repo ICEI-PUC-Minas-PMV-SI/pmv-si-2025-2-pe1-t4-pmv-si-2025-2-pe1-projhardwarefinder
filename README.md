@@ -11,10 +11,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 ## Integrantes
 
 * Marcelo Mendes Rocha de Freitas
-* Luana Cristina Eleutério
-* Nome completo do aluno 3
-* Rodrigo Luiz de Lima Ferreira
-* Victor Augusto Lobatto da Mata
+* Eric Couto Waisberg
 * Marco Antônio dos Santos Alves
 
 
