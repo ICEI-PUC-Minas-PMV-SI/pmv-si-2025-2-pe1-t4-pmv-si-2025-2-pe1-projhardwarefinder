@@ -1,0 +1,26 @@
+/* ===== RESET SIMPLES ===== */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background-color: #f4f4f6;
+  color: #222;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: min(1000px, 90%);
+  margin: 0 auto;
+}
+
+/* IMPORTAR ESTILOS DO HEADER E FOOTER */
+@import url("../../Components/Header/header.css");
+@import url("../../Components/Footer/footer.css");

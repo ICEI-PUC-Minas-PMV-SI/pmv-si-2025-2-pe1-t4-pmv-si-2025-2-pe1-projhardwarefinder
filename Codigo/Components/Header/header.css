@@ -1,0 +1,66 @@
+/* Container genérico */
+.container {
+  width: min(1000px, 90%);
+  margin: 0 auto;
+}
+
+/* HEADER */
+
+.site-header {
+  background-color: #0b3b73;
+  color: #ffffff;
+  padding: 0.75rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.site-name {
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+/* Navegação */
+
+.main-nav {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.main-nav a {
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  color: #e3edff;
+  text-decoration: none;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.main-nav a:hover {
+  background-color: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+}
+
+.main-nav a.is-active {
+  background-color: #ffffff;
+  color: #0b3b73;
+  font-weight: 700;
+}
