@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Se quiser exigir texto, pode checar length > 0:
       const query = termo.length > 0 ? `?q=${encodeURIComponent(termo)}` : "";
-      window.location.href = "../Search/index.html"0 /*+ query*/;
+      window.location.href = "../Search/search.html"0 /*+ query*/;
     });
   }
 });
