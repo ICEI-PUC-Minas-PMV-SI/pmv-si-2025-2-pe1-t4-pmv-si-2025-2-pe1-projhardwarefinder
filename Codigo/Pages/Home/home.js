@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Formulário central de busca
+  // Formulário de busca
   const form = document.getElementById("home-search-form");
   const input = document.getElementById("home-search-input");
 
