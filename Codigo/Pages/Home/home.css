@@ -3,7 +3,7 @@
   padding-top: 4rem;
 }
 
-/* Bloco principal ocupando a maior parte da tela */
+/* Bloco principal */
 .hero {
   min-height: calc(100vh - 6rem);
   display: flex;
