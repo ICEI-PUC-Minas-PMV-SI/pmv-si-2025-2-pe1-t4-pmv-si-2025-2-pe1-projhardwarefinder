@@ -122,11 +122,3 @@
 .btn-secondary:hover {
   background-color: #dde6ff;
 }
-
-/* Em telas maiores só centraliza melhor o bloco */
-@media (min-width: 900px) {
-  .hero {
-    max-width: 980px;
-    margin: 0 auto;
-  }
-}
