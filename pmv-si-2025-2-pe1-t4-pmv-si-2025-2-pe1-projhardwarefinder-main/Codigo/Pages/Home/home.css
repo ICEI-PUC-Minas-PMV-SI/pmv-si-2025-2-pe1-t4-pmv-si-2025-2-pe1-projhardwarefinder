@@ -1,0 +1,124 @@
+/* Espaço para o header */
+.home {
+  padding-top: 4rem;
+}
+
+/* Bloco principal */
+.hero {
+  min-height: calc(100vh - 6rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  padding: 2rem 1.5rem 4rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Coluna principal de texto + busca */
+.hero-text {
+  max-width: 640px;
+}
+
+.hero-text h1 {
+  font-size: 2rem;
+  color: #003366;
+  margin-bottom: 0.75rem;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  color: #555555;
+  margin-bottom: 1.6rem;
+}
+
+/* Formulário de busca central visual */
+.hero-search {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: stretch;
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.hero-search input {
+  padding: 0.7rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid #c3d5f0;
+  font-size: 0.95rem;
+  outline: none;
+}
+
+.hero-search input:focus {
+  border-color: #0b64c0;
+  box-shadow: 0 0 0 2px rgba(11, 100, 192, 0.15);
+}
+
+/* Botão principal */
+.btn {
+  display: inline-block;
+  background-color: #0056b3;
+  color: #ffffff;
+  padding: 0.6rem 1.4rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease, transform 0.1s ease;
+}
+
+.btn:hover {
+  background-color: #003f80;
+  transform: translateY(-1px);
+}
+
+/* Cartão de resumo – secundário */
+.hero-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  width: 280px;
+  text-align: left;
+}
+
+.hero-card h2 {
+  font-size: 1.1rem;
+  color: #003366;
+  margin-bottom: 0.75rem;
+}
+
+.hero-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.25rem 0;
+  font-size: 0.95rem;
+  color: #444444;
+}
+
+.hero-card li + li {
+  margin-top: 0.3rem;
+}
+
+/* Botão secundário */
+.btn-secondary {
+  display: inline-block;
+  background-color: #eef3ff;
+  color: #0b3b73;
+  padding: 0.5rem 1.2rem;
+  border-radius: 999px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.15s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #dde6ff;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>GPUs</title>
+
+        <link rel="stylesheet" href="/Codigo/Components/Header/header.css">
+        <link rel="stylesheet" href="/Codigo/Components/Footer/footer.css">
+        <link rel="stylesheet" href="../styles.css">
+
+    </head>
+
+    <body>
+
+        <header class="site-header">
+
+            <div class="container header-inner">
+                <div class="brand">
+                    <img src="/Codigo/Assets/img/logo.jpg" alt="Logo Hardware Finder" class="logo" />
+                    <span class="site-name">Hardware Finder</span>
+                </div>
+
+                <nav class="main-nav">
+                    <a href="/Codigo/Pages/Home/index.html"    data-page="home">Home</a>
+                    <a href="/Codigo/Pages/Search/search.html"  data-page="search">Search</a>
+                    <a href="/Codigo/Pages/Profile/profile.html" data-page="profile">Profile</a>
+                </nav>
+            </div>
+
+        </header>
+        
+        <div class="main">
+            <div class="menus_laterais">
+                <div class="paginas_pecas_diferentes">
+
+                    <h2>Escolha sua Peça:</h2>
+                    <button onclick="trocapagina(1)">CPUs</button>
+                    <button onclick="trocapagina(2)">GPUs</button>
+                    <button onclick="trocapagina(3)">RAMs</button>
+                    <button onclick="trocapagina(4)">Placas-Mães</button>
+                    <button onclick="trocapagina(5)">Fontes</button>
+
+
+                </div>
+
+
+                <div class="lista_gpus"></div>
+
+
+                <div class="controls" aria-hidden="false">
+                  <button id="sortPotenciaBtn" class="secondary">Ordenar por Potencia ↑</button>
+                  <button id="sortPrecoBtn" class="secondary">Ordenar por Preco ↑</button>
+                  <button id="sortCustobenenficioBtn" class="secondary">Ordenar por Custo Beneficio ↑</button>
+                </div>
+
+            </div>
+            
+            <section id="gallery" class="gallery" aria-live="polite" aria-label="Galeria de Pecas">
+                <!-- Imagens serão inseridas aqui pelo JavaScript -->
+            </section>
+        </div>
+
+        <footer class="site-footer">
+
+            <div class="container">
+                <p>
+                    &copy; <span class="js-current-year">2025</span>
+                    Hardware Finder • <a href="#">Contato</a>
+                </p>
+            </div>
+
+        </footer>
+
+        <script src="../js/search_gpu.js"></script>
+  
+    </body>
+
+</html>
