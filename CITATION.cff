@@ -20,6 +20,11 @@ authors:
     family-names: dos Santos Alves
     email: 
     affiliation: PUC Minas
+- name-suffix: Professor
+- given-names: Marco Rodrigo
+    family-names: Costa
+    email: 
+    affiliation: PUC Minas
   
 repository-code: >-
   https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t4-pmv-si-2025-2-pe1-projhardwarefinder.git
@@ -30,4 +35,4 @@ keywords:
   - HTML
   - CSS
   - JavaScript
-date-released: '2025-12-06'
+date-released: '2025-12-07'

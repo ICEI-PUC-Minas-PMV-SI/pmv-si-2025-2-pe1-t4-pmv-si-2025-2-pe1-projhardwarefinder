@@ -5,30 +5,27 @@
 
         <title>GPUs</title>
 
+        <link rel="stylesheet" href="/Codigo/Components/Header/header.css">
+        <link rel="stylesheet" href="/Codigo/Components/Footer/footer.css">
         <link rel="stylesheet" href="../styles.css">
 
     </head>
 
     <body>
 
-        <header>
-            <div class="logo">
+        <header class="site-header">
 
-                <img class="logo" src="../peca_procura/img/hardwarefinder_logo.png">
+            <div class="container header-inner">
+                <div class="brand">
+                    <img src="/Codigo/Assets/img/logo.jpg" alt="Logo Hardware Finder" class="logo" />
+                    <span class="site-name">Hardware Finder</span>
+                </div>
 
-            </div>
-
-            <div class="redefinir_escolhas">
-
-                <h2>Seu Pc:</h2>
-                <button onclick="trocapagina(6)"> Reset</button>
-
-            </div>
-
-            <div class="login">
-
-                <button class="btn_login"> LOGIN</button>
-
+                <nav class="main-nav">
+                    <a href="/Codigo/Pages/Home/index.html"    data-page="home">Home</a>
+                    <a href="/Codigo/Pages/Search/search.html"  data-page="search">Search</a>
+                    <a href="/Codigo/Pages/Profile/profile.html" data-page="profile">Profile</a>
+                </nav>
             </div>
 
         </header>
@@ -62,6 +59,18 @@
             <section id="gallery" class="gallery" aria-live="polite" aria-label="Galeria de Pecas">
                 <!-- Imagens serão inseridas aqui pelo JavaScript -->
             </section>
+        </div>
+
+        <footer class="site-footer">
+
+            <div class="container">
+                <p>
+                    &copy; <span class="js-current-year">2025</span>
+                    Hardware Finder • <a href="#">Contato</a>
+                </p>
+            </div>
+
+        </footer>
 
         <script src="../js/search_gpu.js"></script>
   
