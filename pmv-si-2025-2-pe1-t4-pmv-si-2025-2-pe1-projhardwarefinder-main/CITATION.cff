@@ -1,0 +1,38 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: Web Application Template
+message: >-
+  Repositório padrão para o Eixo 1 - Projeto 1: Aplicações
+  Web da PUC Minas.
+type: software
+authors:
+  - given-names: Marcelo
+    family-names: Mendes Rocha de Freitas
+    email: marmrfreitas@gmail.com
+    affiliation: PUC Minas
+- given-names: Eric
+    family-names: Couto Waisberg
+    email: 
+    affiliation: PUC Minas
+- given-names: Marco Antônio
+    family-names: dos Santos Alves
+    email: 
+    affiliation: PUC Minas
+- name-suffix: Professor
+- given-names: Marco Rodrigo
+    family-names: Costa
+    email: 
+    affiliation: PUC Minas
+  
+repository-code: >-
+  https://github.com/ICEI-PUC-Minas-PMV-SI/pmv-si-2025-2-pe1-t4-pmv-si-2025-2-pe1-projhardwarefinder.git
+abstract: >-
+ Criado para ajudar com o crescente numero de combinações de peças de computador disponiveis no mercado, o projeto HardWare Finder vem para simplificar o proscesso de escolha de peças para computador.
+keywords:
+  - Desenvolvimento Web
+  - HTML
+  - CSS
+  - JavaScript
+date-released: '2025-12-07'

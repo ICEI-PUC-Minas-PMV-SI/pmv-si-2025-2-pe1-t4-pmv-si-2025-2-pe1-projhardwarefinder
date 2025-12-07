@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>Pesquisa de Peças</title>
+
+        <link rel="stylesheet" href="/Codigo/Components/Header/header.css">
+        <link rel="stylesheet" href="/Codigo/Components/Footer/footer.css">
+
+    </head>
+
+    <body>
+
+        <header class="site-header">
+
+            <div class="container header-inner">
+                <div class="brand">
+                    <img src="/Codigo/Assets/img/logo.jpg" alt="Logo Hardware Finder" class="logo" />
+                    <span class="site-name">Hardware Finder</span>
+                </div>
+
+                <nav class="main-nav">
+                    <a href="/Codigo/Pages/Home/index.html"    data-page="home">Home</a>
+                    <a href="/Codigo/Pages/Search/search.html"  data-page="search">Search</a>
+                    <a href="/Codigo/Pages/Profile/profile.html" data-page="profile">Profile</a>
+                </nav>
+            </div>
+
+        </header>
+        
+        <div class="main">
+                <div class="paginas_pecas_diferentes">
+
+                    <h2>Escolha sua Peça:</h2>
+    
+                    <button onclick="trocapagina(1)">CPUs</button>
+                    <button onclick="trocapagina(2)">GPUs</button>
+                    <button onclick="trocapagina(3)">RAMs</button>
+                    <button onclick="trocapagina(4)">Placas-Mães</button>
+                    <button onclick="trocapagina(5)">Fontes</button>
+                    
+
+
+                </div>
+
+        </div>
+
+        <footer class="site-footer">
+
+            <div class="container">
+                <p>
+                    &copy; <span class="js-current-year">2025</span>
+                    Hardware Finder • <a href="#">Contato</a>
+                </p>
+            </div>
+
+        </footer>
+            
+        <script>
+
+            function trocapagina(numPaginaRecebido) {
+
+                let numPagina = numPaginaRecebido;
+
+                switch (numPagina){ 
+
+                    case 1:
+                        window.location.href = "pages_detalhes/peca_cpu_detalhes.html";
+                        break;
+                    case 2:
+                        window.location.href = "pages_detalhes/peca_gpu_detalhes.html";
+                        break;
+                    case 3:
+                        window.location.href = "pages_detalhes/peca_memoria_detalhes.html";
+                        break;
+                    case 4:
+                        window.location.href = "pages_detalhes/peca_mobo_detalhes.html";
+                        break;
+                    case 5:
+                        window.location.href = "pages_detalhes/peca_fonte_detalhes.html";
+                        break;
+                
+                }
+                
+            }
+
+        </script>
+    </body>
+
+</html>
